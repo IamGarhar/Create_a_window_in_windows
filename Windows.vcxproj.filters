@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\0. Appication">
+      <UniqueIdentifier>{e2ed6005-a80f-4406-90e1-b0512cfd905e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\0. Application">
+      <UniqueIdentifier>{e35b2e7f-3f24-4420-a45d-27e027886938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\1. Window">
+      <UniqueIdentifier>{7e4b3261-3041-4aff-b661-c9f8ce331696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\1. Window">
+      <UniqueIdentifier>{4dfe1cf2-b5f6-4712-811e-c0e68a35d0a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="application.cpp">
+      <Filter>ソース ファイル\0. Appication</Filter>
+    </ClCompile>
+    <ClCompile Include="window.cpp">
+      <Filter>ソース ファイル\1. Window</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル\0. Appication</Filter>
+    </ClCompile>
+    <ClCompile Include="window_creator.cpp">
+      <Filter>ソース ファイル\1. Window</Filter>
+    </ClCompile>
+    <ClCompile Include="window_accessor.cpp">
+      <Filter>ソース ファイル\1. Window</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application.h">
+      <Filter>ヘッダー ファイル\0. Application</Filter>
+    </ClInclude>
+    <ClInclude Include="window.h">
+      <Filter>ヘッダー ファイル\1. Window</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル\0. Application</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
