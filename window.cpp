@@ -71,7 +71,7 @@ namespace Window
 		_preExecTime = _preFpsTime = timeGetTime();
 		_curTime = _frameCount = 0;
 
-		return 0;
+		return S_OK;
 	}
 
 	/// <summary>
