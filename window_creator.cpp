@@ -102,7 +102,7 @@ namespace Window
 	/// </summary>
 	void Manager::DisplayWindowMessageBox()
 	{
-		switch (MessageBoxEx(nullptr, L"Do you wanna play in windowed mode?", L"START-UP MODE SELECT",
+		switch (MessageBoxEx(nullptr, "Do you wanna play in windowed mode?", "START-UP MODE SELECT",
 			MB_YESNOCANCEL | MB_ICONQUESTION, MAKELANGID(LANG_ENGLISH, SUBLANG_ENGLISH_US)))
 		{
 		case IDYES:
@@ -141,13 +141,13 @@ namespace Window
 	{
 		// popup menu
 		_hPopupMenu = CreatePopupMenu();
-		AppendMenu(_hPopupMenu, MF_STRING, static_cast<int>(DisplayMode::Windowed), L"&Windowed mode");
+		AppendMenu(_hPopupMenu, MF_STRING, static_cast<int>(DisplayMode::Windowed), "&Windowed mode");
 		AppendMenu(_hPopupMenu, MF_SEPARATOR, 0, nullptr);
-		AppendMenu(_hPopupMenu, MF_STRING, static_cast<int>(DisplayMode::Fullscreen), L"&Fullscreen mode");
+		AppendMenu(_hPopupMenu, MF_STRING, static_cast<int>(DisplayMode::Fullscreen), "&Fullscreen mode");
 
 		// window menu
 		_hMenu = CreateMenu();
-		AppendMenu(_hMenu, MF_POPUP, reinterpret_cast<UINT_PTR>(_hPopupMenu), L"&Display settings");
+		AppendMenu(_hMenu, MF_POPUP, reinterpret_cast<UINT_PTR>(_hPopupMenu), "&Display settings");
 		SetMenu(_hWnd, _hMenu);
 	}
 
@@ -187,7 +187,7 @@ namespace Window
 	{
 		if (ChangeDisplaySettings(&_deviceMode, CDS_FULLSCREEN) != DISP_CHANGE_SUCCESSFUL)
 		{
-			MessageBox(nullptr, L"Failed to switch to full-screen mode", L"Error", MB_OK | MB_ICONERROR);
+			MessageBox(nullptr, "Failed to switch to full-screen mode", "Error", MB_OK | MB_ICONERROR);
 			return;
 		}
 

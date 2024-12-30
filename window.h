@@ -12,9 +12,9 @@ namespace Window
 	// constant
 	//--------------------------------------------------------
 	// window name
-	constexpr LPCTSTR WINDOW_NAME       = L"AppWindow";
-	constexpr LPCTSTR WINDOW_CLASS_NAME = L"AppWindowClass";
-	constexpr LPCTSTR WINDOW_MENU_NAME  = L"AppWindowMenu";
+	constexpr LPCTSTR WINDOW_NAME       = "AppWindow";
+	constexpr LPCTSTR WINDOW_CLASS_NAME = "AppWindowClass";
+	constexpr LPCTSTR WINDOW_MENU_NAME  = "AppWindowMenu";
 
 	// window size
 	constexpr int WINDOW_SIZE_WIDTH  = 960;
