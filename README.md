@@ -8,14 +8,17 @@ Please do not expect advanced technologies or implementations here.
 ## Usage
 Windows properties must be set correctly for this project to work.
 Here is an example setup in my environment.
-- VC++ directories
-  - Include directories > [ Windows Kits\Include ]
-  - Library directories > [ Windows Kits\Lib ]
-- C/C++
-  - Code Generation > Runtime Library > [ Multi-threaded Debug (/MTd) ]
-  - Language > Conformance mode > [ No ]
-- Linker
-  -  System > Subsystem > [ Not Set ]
+- Common Properties
+  - General
+    - Character Set > [ Use Multi-Byte Character Set ]
+  - VC++ directories
+    - Include directories > [ Windows Kits\Include ]
+    - Library directories > [ Windows Kits\Lib ]
+  - C/C++
+    - Code Generation > Runtime Library > [ Multi-threaded Debug (/MTd) ]
+    - Language > Conformance mode > [ No ]
+  - Linker
+    -  System > Subsystem > [ Not Set ]
   
 ## Author
 Name: IamGarhar\
