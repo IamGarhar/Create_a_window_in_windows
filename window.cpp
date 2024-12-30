@@ -112,7 +112,7 @@ namespace Window
 #ifdef _DEBUG
 			// set debug strings
 			wsprintf(_debugStr, WINDOW_NAME);
-			wsprintf(&_debugStr[wcslen(_debugStr)], _T(" - fps [ %d ]"), _fpsCount);
+			wsprintf(&_debugStr[strlen(_debugStr)], _T(" - fps [ %d ]"), _fpsCount);
 #endif
 
 			// if you run a graphics pipeline, do it here
